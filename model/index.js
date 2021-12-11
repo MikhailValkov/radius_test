@@ -12,6 +12,7 @@ mongoose.connect(`mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}`,
         useNewUrlParser: true,
         useUnifiedTopology: true
     }).catch(e => {
+        // TODO: need use graylog or something instead console.log
         console.log(e);
     });
 
