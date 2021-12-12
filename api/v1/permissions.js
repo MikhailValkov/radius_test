@@ -115,7 +115,7 @@ routes.get("/:id", async (req, res) => {
 routes.post("/", async (req, res) => {
   await model.permission
     .create(req.body)
-    .then((doc) => res.status(201).send())
+    .then(() => res.status(201).send())
     .catch((err) => res.status(409).json(err));
 });
 
@@ -165,7 +165,7 @@ routes.post("/", async (req, res) => {
 routes.put("/:id", async (req, res) => {
   await model.permission
     .updateByID(req.params.id, req.body)
-    .then((doc) => res.status(204).send())
+    .then(() => res.status(204).send())
     .catch((err) => res.status(404).json(err));
 });
 
