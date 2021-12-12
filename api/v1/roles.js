@@ -109,9 +109,9 @@ routes.get("/:id", async (req, res) => {
  *                items:
  *                  type: string
  *                  description: list of permission ids
- *                  example:
- *                    - "61b5d84d72f5607f0be09df3"
- *                    - "51b5d84d72f5607f0be09df6"
+ *                example:
+ *                  - "61b5d84d72f5607f0be09df3"
+ *                  - "51b5d84d72f5607f0be09df6"
  *    responses:
  *      201:
  *        description: Created
@@ -167,9 +167,9 @@ routes.post("/", async (req, res) => {
  *                items:
  *                  type: string
  *                  description: list of permission ids
- *                  example:
- *                    - "61b5d84d72f5607f0be09df3"
- *                    - "51b5d84d72f5607f0be09df6"
+ *                example:
+ *                  - "61b5d84d72f5607f0be09df3"
+ *                  - "51b5d84d72f5607f0be09df6"
  *     responses:
  *       204:
  *         description: Updated
